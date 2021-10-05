@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Well numbering system</title>
+</head>
+<body class="p-2">
+
+    <h1 class="my-5 text-center">Wella numbering system</h1>
+
+    <p class="m-0 text-dark">Format the answer like the following: </p>
+    <p class="m-0 text-secondary">black / red mahogany</p>
+
+    <div class="page-container">
+        <div class="answer-container">
+            <div id="questionContainer" class="text-center mb-3"></div>
+            <input class="form-control w-100" id="userInput" onkeyup="checkAnswer()" placeholder="black / red mahogany">
+            <div id="answerContainer"></div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Show chart
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Chart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>No.</th>
+                                <th>Depth</th>
+                                <th>Tone</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td></td>
+                                <td>Natural</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td>Ash</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Black</td>
+                                <td>Cool ash</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Dark brown</td>
+                                <td>Gold</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Medium brown</td>
+                                <td>Red</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Light brown</td>
+                                <td>Mahogany</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Dark blonde</td>
+                                <td>Violet</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Medium blonde</td>
+                                <td>Brunette</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Light blonde</td>
+                                <td>Pearl</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Very light blonde</td>
+                                <td>Cendre</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Lightest blonde</td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

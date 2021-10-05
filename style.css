@@ -1,0 +1,14 @@
+h1 {
+    font-family: ui-monospace;
+    font-size: 2.2rem;
+}
+
+.page-container {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+}
+
+.answer-container {
+    width: 100vw;
+}
